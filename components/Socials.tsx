@@ -10,19 +10,19 @@ import {
 
 const icons = [
   {
-    path: "/",
+    path: "https://www.linkedin.com/in/bhagyashreewalanj6490/",
     name: <RiYoutubeFill />,
   },
   {
-    path: "/",
+    path: "https://www.linkedin.com/in/bhagyashreewalanj6490/",
     name: <RiLinkedinFill />,
   },
   {
-    path: "/",
+    path: "https://github.com/bhagyashreeWalanj",
     name: <RiGithubFill />,
   },
   {
-    path: "/",
+    path: "https://www.instagram.com/study.tunes.co/",
     name: <RiInstagramFill />,
   },
 ];

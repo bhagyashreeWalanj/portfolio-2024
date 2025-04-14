@@ -17,35 +17,39 @@ const ProjectCard = ({ project }: IProjectCard) => {
       <CardHeader className="p-0">
         {/* image  */}
         <div
-          className="relative w-full h-[300px] flex items-center justify-center bg-tertiary dark:bg-secondary/40 xl:bg-work_project_bg_light xl:dark:bg-work_project_bg_dark xl:bg-[110%]
+          className="relative w-full h-[300px] flex items-center justify-center bg-tertiary dark:bg-secondary/40  xl:dark:bg-work_project_bg_dark 
         xl:bg-no-repeat overflow-hidden"
         >
           <Image
-            className="absolute bottom-10 h-40 shadow-2xl"
+            className=" absolute bottom-10 h-50 shadow-2xl"
             src={project.image}
-            width={247}
-            height={250}
+            width={300}
+            height={300}
             alt=""
             priority
           />
 
           {/* buttons      */}
           <div className="flex gap-x-4">
-            <Link
+            <a
               href={project.link}
-              passHref
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-primary dark:bg-secondary w-[54px] h-[54px] rounded-full flex justify-center items-center scale-0 opacity-0 
-            group-hover:scale-100 group-hover:opacity-100 transition-all duration-200"
+          group-hover:scale-100 group-hover:opacity-100 transition-all duration-200"
             >
               <Link2Icon className="text-white" />
-            </Link>
-            <Link
+            </a>
+
+            <a
               href={project.github}
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-secondary w-[54px] h-[54px] rounded-full flex justify-center items-center scale-0 opacity-0 
             group-hover:scale-100 group-hover:opacity-100 transition-all duration-200"
             >
               <FaGithub className="text-white" />
-            </Link>
+            </a>
           </div>
         </div>
       </CardHeader>

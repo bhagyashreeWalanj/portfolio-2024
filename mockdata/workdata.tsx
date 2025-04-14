@@ -49,7 +49,7 @@ export const projectData = [
     category: "react js",
     Name: "Language Translator App",
     description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque amet voluptates facilis sed enim fuga harum et magnam necessitatibus vel.",
+      "Developed a global translator app leveraging React.js, Node.js, and CSS3, designed to provide seamless translation services. Integrated comprehensive country data with codes for accurate localization, enhancing user accessibility and global connectivity..",
     link: "https://language-translator-iota.vercel.app/",
     github: "https://github.com/bhagyashreeWalanj/language-translator",
   },
@@ -62,5 +62,14 @@ export const projectData = [
       "'Bikezz' my innovative Next.js e-commerce website offering a seamless bicycle shopping experience. Leveraging Tailwind CSS, TypeScript, Sanity.io for content management, and Stripe for secure payments",
     link: "https://bikezz-ecommerce.vercel.app/",
     github: "https://github.com/bhagyashreeWalanj/bikezz_ecommerce",
+  },
+  {
+    image: "/work/habitStacker1.png",
+    category: "next js",
+    Name: "Habit Tracker Website",
+    description:
+      "'Habit stacker' my innovative Next.js app. Using TypeScript, React, Tailwind CSS, Clerk for authentication, I had cover everything from complex UI components to responsive design and advanced functionality.",
+    link: "https://habit-stacker-nextjs.vercel.app/",
+    github: "https://github.com/bhagyashreeWalanj/habit-stacker-nextjs",
   },
 ];

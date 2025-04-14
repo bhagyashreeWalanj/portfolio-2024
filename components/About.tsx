@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import DevImg from "./DevImg";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/tabs";
 import {
@@ -151,7 +150,7 @@ const About = () => {
   const educationTitle = educationData ? educationData.title : "";
 
   return (
-    <section className="xl:h-[860px] pb-12 xl:py-24 ">
+    <section className="xl:h-[860px] pb-12 xl:py-24 mt-10" id="about">
       <div className="container mx-auto">
         <h2 className="section-title mb-8 xl:mb-16 text-center mx-auto">
           About Me
@@ -176,7 +175,7 @@ const About = () => {
                 className="w-[162px] xl:w-auto"
                 value="qualification"
               >
-                Qualification
+                Experience
               </TabsTrigger>
               <TabsTrigger className="w-[162px] xl:w-auto" value="skills">
                 Skills
@@ -188,7 +187,7 @@ const About = () => {
               <TabsContent value="personal">
                 <div className="text-center xl:text-left">
                   <h3 className="h3 mb-4">
-                    Unmatched service quality for over 8 years{" "}
+                    Experience for over 8 years{" "}
                   </h3>
                   <p className="subtitle max-w-xl mx-auto xl:mx-0">
                     I specialize in Reactjs intuitive website with cutting edge
@@ -216,11 +215,11 @@ const About = () => {
                   </div>
                 </div>
               </TabsContent>
-              {/* Qualification  */}
+              {/* Experience  */}
               <TabsContent value="qualification">
                 <div className="ml-9">
                   <h3 className="h3 mb-8 text-center xl:text-left">
-                    My Awesome Journey
+                    My Professional Journey
                   </h3>
                   {/* Experience and education wrapper */}
                   <div className="grid md:grid-cols-2 gap-y-8">

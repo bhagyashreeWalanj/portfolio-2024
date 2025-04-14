@@ -35,15 +35,18 @@ export const Header = () => {
     >
       <div className="container mx-auto">
         <div className="flex justify-between items-center">
-          {/* <Logo /> */}
-          <Image
-            src="/vercel.svg"
-            alt="Vercel Logo"
-            className="dark:invert"
-            width={100}
-            height={24}
-            priority
-          />
+          <div className="flex items-center gap-0">
+            <Image
+              src="/logo.png"
+              alt="Vercel Logo"
+              className="dark:invert"
+              width={100}
+              height={24}
+              priority
+            />
+            <div className="text-lg font-bold -ml-6">{"SHREE"}</div>
+          </div>
+
           <div className="flex items-center gap-x-6 ">
             <Nav
               containerStyles="hidden xl:flex gap-x-8 items-center"

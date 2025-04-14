@@ -4,7 +4,8 @@ import Link from "next/link";
 import { Button } from "./ui/button";
 import { Download, Send } from "lucide-react";
 import { TypeAnimation } from "react-type-animation";
-
+import { motion } from "framer-motion";
+import { fadeIn } from "./../variants";
 import {
   RiBriefcase4Fill,
   RiTeamFill,
@@ -45,8 +46,8 @@ const Hero = () => {
               />
             </h1>
             <p className="subtitle max-w-[490px] mx-auto xl:mx-0">
-              Brief description with insights of myself, my vocational journey,
-              and what I engaged in professionally.
+            Passionate frontend engineer with 8+ years of expertise in building dynamic, high-performance web applications using React.js, JavaScript, and Next.js. 
+            
             </p>
             {/* buttons */}
             <div className="flex flex-col gap-y-3 md:flex-row gap-x-3 mx-auto xl:mx-0 mb-12">
@@ -66,35 +67,48 @@ const Hero = () => {
             />
           </div>
           {/* image */}
-          <div className="hidden xl:flex relative">
-            {/* Badge */}
-            <Badge
-              containerStyles="absolute top-[9%] -left-[5rem]"
-              icon={<RiBriefcase4Fill />}
-              endCountNum={8}
-              endCountText="+"
-              badgeText="Years Of Experience"
-            />
-            <Badge
-              containerStyles="absolute top-[55%] -right-8"
-              icon={<RiTodoFill />}
-              endCountNum={6}
-              endCountText=""
-              badgeText="Finished Projects"
-            />
-            {/* <Badge
+          <motion.div
+            variants={fadeIn("up", 0.3)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.7 }}
+            className="hidden lg:flex"
+            animate={{ x: 0, opacity: 1 }}
+            transition={{
+              duration: 2,
+              type: "spring",
+            }}
+          >
+            <div className="relative">
+              {/* Badge */}
+              <Badge
+                containerStyles="absolute top-[9%] -left-[5rem]"
+                icon={<RiBriefcase4Fill />}
+                endCountNum={8}
+                endCountText="+"
+                badgeText="Years Of Experience"
+              />
+              <Badge
+                containerStyles="absolute top-[55%] -right-8"
+                icon={<RiTodoFill />}
+                endCountNum={6}
+                endCountText=""
+                badgeText="Finished Projects"
+              />
+              {/* <Badge
               containerStyles="absolute top-[80%] -left-[1rem]"
               icon={<RiTeamFill />}
               endCountNum={9}
               endCountText="k"
               badgeText="Happy Clients"
             /> */}
-            <div className="bg-hero_shape2_light dark:bg-hero_shape2_dark dark:bg-contain w-[500px] h-[500px] bg-no-repeat absolute -top-1 -right-2"></div>
-            <DevImg
-              containerStyles="bg-hero-shape w-[510px] h-[462px] bg-no-repeat relative bg-bottom"
-              imgSrc="/hero/developer3.svg"
-            />
-          </div>
+              <div className="bg-hero_shape2_light dark:bg-hero_shape2_dark dark:bg-contain w-[500px] h-[500px] bg-no-repeat absolute -top-1 -right-2"></div>
+              <DevImg
+                containerStyles="bg-hero-shape w-[510px] h-[462px] bg-no-repeat relative bg-bottom"
+                imgSrc="/hero/developer3.svg"
+              />
+            </div>
+          </motion.div>
         </div>
         {/* icon  */}
         <div className="hidden md:flex absolute left-2/4 bottom-44 xl:bottom-12 animate-bounce">
