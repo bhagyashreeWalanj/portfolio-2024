@@ -56,9 +56,11 @@ const Hero = () => {
                   Contact Me <Send size={18} />
                 </Button>
               </Link>
+              <a href={'portfolio-nextjs/mockdata/Bhagyashree_Walanj_Frontend_developer_Resume.pdf'} target="_blank" rel="noopener noreferrer" download>
               <Button variant={"secondary"} className="gap-x-2">
                 Download CV <Download size={18} />
               </Button>
+              </a>
             </div>
             {/* socials  */}
             <Socials
