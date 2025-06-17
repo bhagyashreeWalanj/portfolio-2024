@@ -56,7 +56,7 @@ const Hero = () => {
                   Contact Me <Send size={18} />
                 </Button>
               </Link>
-              <a href={'portfolio-nextjs/mockdata/Bhagyashree_Walanj_Frontend_developer_Resume.pdf'} target="_blank" rel="noopener noreferrer" download>
+              <a href={'/hero/Bhagyashree_Walanj_Frontend_developer_Resume.pdf'} target="_blank" rel="noopener noreferrer" >
               <Button variant={"secondary"} className="gap-x-2">
                 Download CV <Download size={18} />
               </Button>
@@ -86,7 +86,7 @@ const Hero = () => {
               <Badge
                 containerStyles="absolute top-[9%] -left-[5rem]"
                 icon={<RiBriefcase4Fill />}
-                endCountNum={8}
+                endCountNum={9}
                 endCountText="+"
                 badgeText="Years Of Experience"
               />
