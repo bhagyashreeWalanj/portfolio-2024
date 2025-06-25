@@ -8,15 +8,7 @@ export const projectData = [
     link: "https://bikezz-ecommerce.vercel.app/",
     github: "https://github.com/bhagyashreeWalanj/bikezz_ecommerce",
   },
-  {
-    image: "/work/planAndEat.png",
-    category: "fullstack",
-    Name: "https://meal-planeat.vercel.app/ Website",
-    description:
-      "Meal Planner website to browse the meal, add into your plan day wise or weekly. it also has feature to add new meal with image and description.",
-    link: "https://meal-planeat.vercel.app/",
-    github: "https://github.com/bhagyashreeWalanj/mealplanner",
-  },
+
   {
     image: "/work/real-estate.png",
     category: "react js",
@@ -53,7 +45,15 @@ export const projectData = [
     link: "https://language-translator-iota.vercel.app/",
     github: "https://github.com/bhagyashreeWalanj/language-translator",
   },
-
+  {
+    image: "/work/planAndEat.png",
+    category: "fullstack",
+    Name: "https://meal-planeat.vercel.app/ Website",
+    description:
+      "Meal Planner website to browse the meal, add into your plan day wise or weekly. it also has feature to add new meal with image and description.",
+    link: "https://meal-planeat.vercel.app/",
+    github: "https://github.com/bhagyashreeWalanj/mealplanner",
+  },
   {
     image: "/work/bikezz.png",
     category: "next js",
@@ -71,5 +71,23 @@ export const projectData = [
       "'Habit stacker' my innovative Next.js app. Using TypeScript, React, Tailwind CSS, Clerk for authentication, I had cover everything from complex UI components to responsive design and advanced functionality.",
     link: "https://habit-stacker-nextjs.vercel.app/",
     github: "https://github.com/bhagyashreeWalanj/habit-stacker-nextjs",
+  },
+  {
+    image: "/work/travel_NomadX.png",
+    category: "Next.js & Tailwind SPA",
+    Name: "Travel NomadX Website",
+    description:
+      "A modern, fully responsive travel website built as a single page application using NextJs, TypeScript, and Tailwind CSS. Features include an animated hero carousel powered by Framer Motion, dynamic image galleries, and modular, reusable components. ",
+    link: "https://travel-nomad-x-nextjs.vercel.app/",
+    github: "https://github.com/bhagyashreeWalanj/travel-nomadX-nextjs",
+  },
+  {
+    image: "/work/coffeeShop.jpg",
+    category: "Next.js & Tailwind SPA",
+    Name: "Coffee Shop Website",
+    description:
+      "A modern, fully responsive coffee shop website built as a single page application using NextJs, TypeScript, and Tailwind CSS. Features include an responsive website,  dynamic image galleries, and modular, reusable components. ",
+    link: "https://coffee-shop-nextjs-nine.vercel.app/",
+    github: "https://github.com/bhagyashreeWalanj/coffee-shop-nextjs",
   },
 ];

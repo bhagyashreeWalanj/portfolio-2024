@@ -28,21 +28,30 @@ const Projects = () => {
         </h2>
 
         {/* tabs */}
-        <Tabs defaultValue={category} className="mb-24 xl:mb-48">
-          <TabsList className="w-full grid h-full md:grid-cols-4 lg:max-w-[640px]  mb-12 mx-auto md:border dark:border-none">
-            {categories.map((category: any, index: number) => {
-              return (
-                <TabsTrigger
-                  value={category}
-                  key={index}
-                  className="capitalize w-[162px] md:w-auto"
-                  onClick={() => setCategory(category)}
-                >
-                  {category}
-                </TabsTrigger>
-              );
-            })}
-          </TabsList>
+        <Tabs defaultValue={category} className="border-b mb-24 xl:mb-48">
+          <div className="w-full flex justify-center mb-12">
+            <div className="inline-flex border rounded-lg dark:border-neutral-700 bg-white dark:bg-neutral-900">
+              <TabsList
+                className="flex flex-row items-center gap-2
+            overflow-x-auto whitespace-nowrap
+            scrollbar-thin scrollbar-thumb-neutral-300 scrollbar-track-transparent
+            px-2"
+              >
+                {categories.map((category: any, index: number) => {
+                  return (
+                    <TabsTrigger
+                      value={category}
+                      key={index}
+                      className="capitalize min-w-[140px] px-4 py-2"
+                      onClick={() => setCategory(category)}
+                    >
+                      {category}
+                    </TabsTrigger>
+                  );
+                })}
+              </TabsList>
+            </div>
+          </div>
           {/* tabs content */}
           <div className="text-lg xl:mt-8 grid grid-cols-1 lg:grid-cols-3 gap-4">
             {filteredProjects &&

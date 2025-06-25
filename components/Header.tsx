@@ -7,6 +7,7 @@ import Nav from "@/app/Nav";
 import MobileNav from "./../app/MobileNav";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
+import Link from "next/link";
 
 export const Header = () => {
   const [header, setHeader] = useState<boolean>(false);
@@ -35,18 +36,19 @@ export const Header = () => {
     >
       <div className="container mx-auto">
         <div className="flex justify-between items-center">
-          <div className="flex items-center gap-0">
-            <Image
-              src="/logo.png"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-            <div className="text-lg font-bold -ml-6">{"SHREE"}</div>
-          </div>
-
+          <Link href={"/"}>
+            <div className="flex items-center gap-0">
+              <Image
+                src="/logo.png"
+                alt="Vercel Logo"
+                className="dark:invert"
+                width={100}
+                height={24}
+                priority
+              />
+              <div className="text-lg font-bold -ml-6">{"SHREE"}</div>
+            </div>
+          </Link>
           <div className="flex items-center gap-x-6 ">
             <Nav
               containerStyles="hidden xl:flex gap-x-8 items-center"
